@@ -1,0 +1,51 @@
+plugins {
+    id 'com.android.application'
+}
+android {
+    compileSdk 33
+
+    tasks.withType(JavaCompile) {
+        configure(options) {
+            options.compilerArgs << '-Xlint:deprecation' << '-Xlint:unchecked' // flag up potential issues
+        }
+    }
+
+    defaultConfig {
+        applicationId "e.s.miniweb"
+        minSdk 22
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        signingConfig signingConfigs.debug
+    }
+
+    buildTypes {
+        release {
+            ndk {
+                debugSymbolLevel = 'SYMBOL_TABLE'
+            }
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            aaptOptions.cruncherEnabled = false
+            ext.alwaysUpdateBuildId = false
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    sourceSets {
+        main {
+            assets {
+                srcDirs 'src\\main\\assets'
+            }
+        }
+    }
+    namespace 'e.s.miniweb'
+}
+

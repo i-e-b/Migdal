@@ -1,0 +1,12 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="512"
+    android:viewportHeight="512">
+  <path
+      android:fillColor="#c57336"
+      android:strokeColor="#68513F"
+      android:strokeLineJoin="bevel"
+      android:pathData="m217 25v14h78v-14zm0 32v46h14v-32h50v32h14v-46zm32 32v14h14v-14zm-64 32v46h30v-46zm48 0v14h46v-14zm64 0v46h30v-46zm-64 32v14h46v-14zm-80 32v46h62v-46zm80 0v14h46v-14zm64 0v46h62v-46zm-64 32v14h46v-14zm-112 32v46h94v-46zm112 0v14h46v-14zm64 0v46h94v-46zm-64 32v14h46v-14zm-144 32v46h126v-46zm144 0v14h46v-14zm64 0v46h126v-46zm-64 32v14h46v-14zm-176 32v46h158v-46zm176 0v14h46v-14zm64 0v46h158v-46zm-64 32v14h46v-14zm-208 32v46h190v-46zm208 0v14h46v-14zm64 0v46h190v-46zm-64 32v14h46v-14z"
+      android:strokeWidth="10"/>
+</vector>
