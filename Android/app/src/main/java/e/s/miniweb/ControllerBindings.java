@@ -23,6 +23,7 @@ public class ControllerBindings {
         ControllerBinding.Use(new Home());
         ControllerBinding.Use(new TestController());
         ControllerBinding.Use(new ExamplesController());
+        ControllerBinding.Use(new TilesController());
     }
 
 }

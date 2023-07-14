@@ -1,0 +1,47 @@
+<!-- e.s.miniweb.models.CharacterInfoModel -->
+<h1><_>codePoint</_>: &#x<_>codePoint</_>;</h1>
+
+<!-- TODO: Fill out the model for these bindings -->
+
+<table>
+    <tr><td>Name</td><td><_>basicName</_></td></tr>
+
+    <tr><td>Version</td><td><_>unicodeReleaseVersion</_></td></tr>
+
+    <tr><td>Plane</td><td><_>planeName</_> U+<_>planeStart</_>..U+<_>planeEnd</_></td></tr>
+
+    <tr><td>Block</td><td><a href="app://home/block?from={{blockStart}}&to={{blockEnd}}"><_>sourceBlockName</_></a> U+<_>blockStart</_>..U+<_>blockEnd</_></td></tr>
+
+    <tr><td>Script</td><td><a href="app://home/script?code={{scriptCode}}"><_>scriptName</_></a> <code><_>scriptCode</_></code></td></tr>
+
+    <tr><td>Category</td><td><a href="app://home/category?code={{categoryCode}}"><_>categoryName</_></a> <code><_>categoryCode</_></code></td></tr>
+
+    <tr><td>Direction</td><td><a href="app://home/direction?code={{directionCode}}"><_>directionName</_></a> <code><_>directionCode</_></code></td></tr>
+
+    <tr><td>Combining Class</td><td><a href="app://home/combine?code={{combiningClassCode}}"><_>combiningClassName</_></a> <code><_>combiningClassCode</_></code></td></tr>
+</table>
+
+<h2>Related</h2>
+<_for caseSubstitutes>
+    <_view model=item url="app://tiles/SubstituteTile"></_view>
+</_for>
+<_else>
+    <tr>
+        <td>Case variants</td>
+        <td>none</td>
+    </tr>
+</_else>
+
+<h2>Related</h2>
+<_for relatedCharacters>
+    <_view model=item url="app://tiles/CharacterTile"></_view>
+</_for><_else>
+    No related characters known
+</_else>
+
+<h2>Derived</h2>
+<_for derivedCharacters>
+    <_view model=item url="app://tiles/CharacterTile"></_view>
+</_for><_else>
+    No derived characters known
+</_else>

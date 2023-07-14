@@ -17,27 +17,10 @@ ol, ul { margin-left: 2rem; padding: 0; font-weight: normal; }
 h1, h2, h3, h4, h5, h6 { margin: 1rem; padding: 0; font-weight: bold; }
 /* End of CSS 'reset' section */
 
-/* Make all links like buttons */
+/* Make links act more like buttons */
 a {
-    display: inline-block;
-    background: linear-gradient(#77f,  #00c);
-    border: 1px solid #006;
-    border-radius: 5px;
-    color: #fff;
-    padding: 10px;
     text-decoration: none;
-    margin: 2px;
-    font-size: large;
-}
-/* indent on press */
-a:active {
-    background: linear-gradient(#00a,  #55e);
-}
-
-/* Small version of link button for inline with text */
-.small-link{
-    padding: 3px;
-    font-size: initial;
+    user-select: none;
 }
 
 /* Make monospaced text stand out */
@@ -80,39 +63,9 @@ input[type=text]:focus {
     border: 3px solid #88f;
 }
 
-/* make a div stand out prominently from the rest of the page */
-.pop-out {
-    padding:5px;
-    border-radius: 5px;
-    border: 1px solid #777;
-    box-shadow: 0px 5px 13px 0px #000;
-    background-color: #eee;
-    color: #000;
-    margin-top:5px;
-    margin-bottom:13px;
-}
-
 .light-bg-txt{
     color: #000;
 }
 .dark-bg-txt{
     color: #fff;
-}
-
-/* SVG background for a demo */
-
-.globe-bg{
-    background: url("asset://images/example.svg");
-    background-position: center;
-    background-attachment: scroll;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.badge-bg{
-    background: url("asset://images/badge.svg");
-    background-position: center;
-    background-attachment: scroll;
-    background-size: contain;
-    background-repeat: no-repeat;
 }

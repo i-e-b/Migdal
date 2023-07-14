@@ -8,3 +8,20 @@ code {
     background-color: #000;
     color: #fab;
 }
+
+a { color: #fab; }
+a:visited { color: #fab; }
+a:active { color: #aef; }
+
+.tile {
+    color:#fff;
+    background-color: #777;
+    box-shadow: 2px 2px 5px 0px #000;
+    margin: 5px;
+    width:20vw;
+    height:25vw;
+    display: inline-block;
+}
+a:active .tile {
+    box-shadow: none;
+}
